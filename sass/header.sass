@@ -1,0 +1,268 @@
+@import bourbon
+@import fonts.sass
+@import _vars.sass
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: "OpenSansRegular", sans-serif
+	overflow-x: hidden
+	color: $darkblue
+
+h1, h2, h3, h4, h5, h6
+	font-family: "OpenSansBold", sans-serif
+	font-weight: normal
+
+h1
+	font-size: em(30pt)
+	// text-transform: uppercase
+h2
+	font-size: em(24pt)
+h3
+	font-size: em(20pt)
+h4
+	font-size: em(18pt)
+h5
+	font-size: em(14pt)
+h6
+	font-size: em(12pt)
+p
+	font-size: em(16pt)
+.button
+	display: inline-block
+	font-size: em(16pt)
+	text-transform: uppercase
+	text-decoration: none
+	padding: 10px 60px
+	margin-top: 20px
+	font-family: "OpenSansLight", sans-serif
+	border: 3px solid
+	letter-spacing: 2px
+a
+	outline: none !important
+
+.hidden
+	display: none
+
+header
+	position: relative
+.block-wrapper
+	margin: 50px 0 150px
+.main-head
+	background-image: url("img/bg_top.jpg")
+	background-size: cover
+	background-position: bottom top
+	min-height: 100vh
+	.contact-line
+		background-color: $blue
+		// height: 50px		
+		.textlogo
+			// width: 325px
+			// display: table
+			line-height: em(26pt)	
+			width: 162px
+			display: inline-block
+			background-color: #FFF
+			height: 50px
+			padding: 0 7px
+			text-align: center
+			vertical-align: middle
+			h4
+				margin: 0
+				// font-size: 1.4em
+		
+		.addressphone
+			text-align: right
+			// display: table
+			.phone,.address
+				float: right
+				// position: relative
+				padding-left: 20px
+				height: 50px				
+				// display: table-cell
+				font-size: em(18px)			
+				vertical-align: middle
+				color: $green
+				span
+					display: inline-block
+					padding: 10px 0
+				i
+					font-size: em(20px)
+					color: #fff
+					padding-right: 5px
+					vertical-align: middle
+
+	.mnu-line
+		background-color: rgba(25, 52, 65, .25)
+		.logo
+			width: 162px
+			height: 100px			
+		span
+			font-size: 50pt
+			font-family: "OpenSansLight"
+nav
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+	li
+		display: inline-block
+.main-mnu
+	// text-align: center
+	> ul
+		> li
+			margin: 0
+			padding: 0
+			> a
+				color: $darkblue
+				display: block
+				padding: 35px 0px
+				margin: 0 20px
+				font-size: em(18pt)
+				text-transform: uppercase
+				// @extend .mt
+				&:hover					
+					text-decoration: none
+					color: $greenwhite					
+					text-shadow: 1px 1px rgba(0, 0, 0, .25)
+				&:link
+					text-decoration: none
+			&.active
+				a
+					text-decoration: none
+					color: $greenwhite
+					border-bottom: 5px solid $greenwhite
+					text-shadow: 1px 1px rgba(0, 0, 0, .25)					
+//Toggle MNU
+.hidden-mnu
+	border: 0
+	display: none
+	li
+		display: block
+		background-color: $greenwhite
+	> ul
+		padding: 15px 0
+		background-color: $greenwhite
+		>li
+			> a
+				text-align: center
+				padding: 15px
+				margin: 0
+				color: $darkgreen
+				&:hover
+					text-shadow: none
+					color: $greenwhite
+					background-color: $darkgreen
+			&.active
+				a
+					text-shadow: none
+					border: 0
+					color: $darkblue
+					text-decoration: underline
+
+body
+  background-color: #333
+
+.toggle-mnu 
+  display: block
+  width: 28px
+  height: 28px
+  margin-top: 14px
+
+  span:after, span:before 
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span 
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: #fff
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+
+  &.on span 
+    background-color: transparent
+
+  &.on span:before 
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after 
+    transform: rotate(-45deg) translate(6px, -7px)
+.slogan
+	padding-top: 20%
+	h2
+		margin: 0
+		display: inline-block
+		padding: 5px 25px
+		font-family: "OpenSansLight", sans-serif
+		color: $greenwhite
+		background-color: $darkblue
+	h1
+		margin: 0
+		display: inline-block
+		padding: 15px 25px
+		font-family: "OpenSansBold", sans-serif
+		font-size: 3.5em
+		background-color: rgba(255, 251, 247, .91)
+		color: $blue
+		text-transform: uppercase
+.city
+	padding: 0
+	margin: 0
+	position: absolute
+	bottom: 0	
+	// width: 100%
+	background: url("img/city_contour_x2.png") repeat-x
+	// background-repeat: repeat-x
+	background-size: 716px 100px
+	height: 100px
+.about
+	// height: 400px
+	background-color: $greenwhite
+	color: $darkblue
+	p
+		text-align: justify
+	h2
+		text-transform: uppercase
+	.button
+		outline: none !important
+		background-color: $greenwhite
+		color: $darkgreen
+		position: relative
+		float: right
+		transition: all .25s ease
+		border-color: $darkgreen
+		cursor: pointer
+		&:hover, &:focus
+			background-color: $darkgreen
+			color: $greenwhite
+			text-decoration: none		
+		&:active
+			background-color: #60766a
+			border-color: #60766a
+			transform: translateY(2px)
+	.city
+		padding: 0
+		margin: 0
+		position: absolute
+		bottom: 0
+		opacity: .15
+		// width: 100%
+		background: url("img/city_contour_dark_x2.png") repeat-x
+		// background-repeat: repeat-x
+		background-size: 716px 100px
+		height: 100px
+		
