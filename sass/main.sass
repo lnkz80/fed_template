@@ -27,7 +27,116 @@ body textarea:required:valid
 //Custom Styles Here
 .objects
 	background-color: #FFF
-	padding: 50px 0
+	padding: 50px
+.but-center
+	width: 100%
+	text-align: center
+	margin-top: 20px
+.item-obj
+	position: relative
+	margin-top: 32px
+	transform: translate(0px, 0px)
+	transition: .25s linear
+	overflow: hidden
+	&:hover
+		box-shadow:	3px 3px 0 #eee
+		transform: translate(-3px, -3px)
+		transition: .25s linear
+	.ico-obj
+		position: absolute
+		top: 0px
+		right: 0px
+		height: 72px
+		.ico-obj-img
+			float: left
+			img
+				height: 36px
+		.ico-obj-descr
+			float: left
+			display: block
+			vertical-align: middle
+			text-align: center
+			background: linear-gradient(to right, $blue, $darkblue)
+			height: 36px
+			// width: 330px
+			color: $green
+			font-size: em(22px)
+			display: none
+			span
+				display: inline-block
+				// background-color: $blue
+				margin: 0 auto
+				padding: 0 80px
+				// line-height: em(10px)
+				font-size: em(10px)
+				font-family: "OpenSansLight", sans-serif
+				text-transform: uppercase
+	.thumb-obj
+		width: 100%			
+	.descr-obj
+		display: block
+		position: absolute
+		bottom: 0
+		width: 100%
+		text-align: center
+		background-color: rgba(25, 52, 65, .9)
+		&:hover
+			background-color: $darkblue		
+		h3
+			color: $greenwhite
+			font-size: em(26px)
+			line-height: em(10px)
+			padding: 20px 0 30px
+			margin: 0
+			font-family: "OpenSansLight", sans-serif				
+		h4
+			margin: 0
+			padding-bottom: 15px
+			margin-bottom: 0
+			color: $green
+			font-size: em(18px)
+			font-family: "OpenSansLight", sans-serif
+			line-height: em(10px)
+		.descr-obj-wrapper
+			display: none
+		p
+			color: $greenwhite
+			font-size: em(16px)
+			text-align: left
+			padding-left: 20%
+			margin-top: 0
+			font-family: "OpenSansLight", sans-serif			
+	.button
+		outline: none !important
+		background-color: $greenwhite
+		color: $blue
+		margin: 0
+		// position: absolute
+		// bottom: 0
+		// left: 0
+		width: 100%
+		transition: all .25s ease
+		border: 0
+		cursor: pointer
+		&:hover, &:focus
+			text-decoration: underline
+		&:active
+			transform: translateY(2px)
+.obj-but
+	outline: none !important
+	background-color: $blue
+	color: $greenwhite
+	position: relative
+	transition: all .25s ease
+	cursor: pointer
+	&:hover, &:focus
+		background-color: $darkblue
+		color: $greenwhite
+		text-decoration: none		
+	&:active
+		background-color: $darkblue
+		transform: translateY(2px)
+
 
 //ALWAYS END
 @import media
