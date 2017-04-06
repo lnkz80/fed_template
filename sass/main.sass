@@ -201,12 +201,102 @@ body textarea:required:valid
 			color: $greenwhite
 		&:active
 			transform: translateY(2px)
-.map
-	margin: 0
-	padding: 0
-	min-height: 100vh
+.google-map
+	color: #fff
+// .maphead
+// 	position: absolute
+// 	// top: 60px
+// 	// left: 100px
+// 	z-index: 1000
+// 	h2
+// 		margin-top: 80px
+// 		color: $darkblue
+// 		padding: 0
+#map
+	height: 500px
+	// position: absolute
+	// z-index: 999
+	// top: 0
+	// left: 0
+	width: 100%
+
+.contacts
+	// height: 500px
+	background-color: $blue
+	background-image: url("img/logo_back.png")
+	background-repeat: no-repeat
+	// background-size: cover
+	// background-position: bottom top
+	background-position: center
+	padding-bottom: 80px
 	h2
-		color: $darkblue
+		color: $greenwhite
+		font-family: "OpenSansLight", sans-serif
+		margin-top: 80px
+	p
+		text-align: justify
+		font-size: em(14px)
+	ul
+		margin: 0
+		padding: 0
+		list-style: none
+		font-family: "OpenSansLight", sans-serif
+		>li
+			list-style-type: none			
+			color: $green
+			text-transform: uppercase
+			a
+				color: $green
+				text-transform: uppercase	
+				// &:hover
+				// 	text-decoration: none /* Убираем подчеркивание */
+    // 				border-bottom: 1px dashed $greenwhite /* Добавляем свою линию */
+			>ol
+				list-style-type: none
+				padding-left: 7px
+				color: $darkblue
+				text-transform: none
+				margin-bottom: 7px
+				i
+					color: $darkgreen
+				a
+					color: $darkblue
+					text-transform: lowercase
+				// :before
+				//     content: "-"
+				//     position: relative
+				//     left: -5px
+footer
+	background-color: $darkblue
+	color: $greenwhite
+	.table
+		height: 70px
+	// height: 70px
+	.footer-logo
+		// background-color: $greenwhite
+		height: 70px
+		width: 70px
+		display: inline-block
+		vertical-align: middle
+
+		img
+			display: block
+			border-right: 1px solid $blue
+			padding: 0 15px
+	span
+		padding-left: 15px
+		font-family: "OpenSansLight", sans-serif
+		text-transform: uppercase
+
+	.footer-social
+		font-size: em(26px)
+		i
+			margin-right: 10px
+		a
+			color: $blue
+			transition: all .25s ease
+			&:hover
+				color: $greenwhite
 
 
 //ALWAYS END
