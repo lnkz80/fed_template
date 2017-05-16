@@ -1,3 +1,4 @@
+$disable-bourbon-deprecation-warnings: true
 @import bourbon
 @import _vars.sass
 
@@ -138,12 +139,12 @@ body textarea:required:valid
 		transform: translateY(2px)
 
 .news
-	background-image: url("img/bg_news.jpg")
+	padding: 50px 0
+	background: url("img/bg_news.jpg") no-repeat
 	background-size: cover
 	// background-position: bottom top
-	background-position: bottom 
-	// min-height: 100vh
-	padding: 50px 0
+	background-position: bottom
+	background-repeat: fixed	
 	h2
 		color: $greenwhite
 	.news-date
