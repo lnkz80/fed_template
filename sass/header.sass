@@ -67,7 +67,7 @@ header
 .main-head
 	background-image: url("img/bg_top.jpg")
 	background-size: cover
-	background-position: bottom top
+	background-position: bottom
 	min-height: 100vh
 	.contact-line
 		background-color: $blue
@@ -337,7 +337,7 @@ body
 .vline
 	position: absolute
 	width: 320px
-	left: 30px
+	left: 140px
 	background-color: rgba(255, 255, 255, .7)
 	height: 100%
 	z-index: 10
@@ -365,18 +365,26 @@ body
 	right: 0
 	margin-right: -100px
 .postimage
-	margin-left: 40px
-	padding: 10px
+	// margin-left: 50px
+	// margin-right: 50px
+	// padding: 20px
+	text-align: center
 	position: relative
 	z-index: 11
 	img
-		position: absolute
-		margin-top: 18px
-		width: 280px
-		height: 280px
+		width: 100%
+		height: auto
+		max-width: 320px
+		padding: 20px
+		// position: absolute
+		// margin-top: 8px
+		// width: 280px
+		// height: 280px
 .dots
-	margin-top: -40px
+	// width: 100%
+	margin-top: -50px
 	text-align: center
+	// padding-left: 260px
 	z-index: 12
 	position: relative
 	i
@@ -385,7 +393,7 @@ body
 	.active
 		color: $darkblue
 .posttext
-	position: absolute
+	// position: absolute
 	text-align: center
 	p
 		color: $greenwhite
