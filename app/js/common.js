@@ -73,46 +73,46 @@ $(".toggle-mnu").click(function() {
 
 //MINE SLIDER ====================================================================
 
-	$(".posttext").hide().eq(0).show();
-	$(".postheader span").hide().eq(0).show();
-	$(".postimage img").hide().eq(0).show();
-	var slNum = 0;
-	var totalSl = 2; //Sliders - 1
+	// $(".posttext").hide().eq(0).show();
+	// $(".postheader span").hide().eq(0).show();
+	// $(".postimage img").hide().eq(0).show();
+	// var slNum = 0;
+	// var totalSl = 2; //Sliders - 1
 
-	$(".posttext").removeClass("hidden");
-	$(".postheader span").removeClass("hidden");
-	$(".postimage img").removeClass("hidden");
-	function slideItems(z){
-		if(slNum<0){
-			slNum=totalSl;
-		}
-		if(slNum>totalSl){
-			slNum = 0;
-		}
-		if(z=="+"){
-			prevNum = slNum + 1;
-			if(prevNum>totalSl){
-				prevNum=0;
-			}
-		}
-		else {
-			prevNum = slNum - 1;	
-		}
-		$(".posttext").hide().eq(slNum).fadeIn(700);
-		$(".postheader span").hide().eq(slNum).fadeIn(700);
-		$(".postimage img").hide().eq(slNum).fadeIn(700);
-		$(".dots i").eq(prevNum).removeClass("active");
-		$(".dots i").eq(slNum).addClass("active");
-		// console.log(slNum + z + 1);
-	}
-	$(".larr i").click(function(){
-		slNum -= 1;
-		slideItems("+");
-	});
-	$(".rarr i").click(function(){
-		slNum += 1;
-		slideItems("-");
-	});
+	// $(".posttext").removeClass("hidden");
+	// $(".postheader span").removeClass("hidden");
+	// $(".postimage img").removeClass("hidden");
+	// function slideItems(z){
+	// 	if(slNum<0){
+	// 		slNum=totalSl;
+	// 	}
+	// 	if(slNum>totalSl){
+	// 		slNum = 0;
+	// 	}
+	// 	if(z=="+"){
+	// 		prevNum = slNum + 1;
+	// 		if(prevNum>totalSl){
+	// 			prevNum=0;
+	// 		}
+	// 	}
+	// 	else {
+	// 		prevNum = slNum - 1;	
+	// 	}
+	// 	$(".posttext").hide().eq(slNum).fadeIn(700);
+	// 	$(".postheader span").hide().eq(slNum).fadeIn(700);
+	// 	$(".postimage img").hide().eq(slNum).fadeIn(700);
+	// 	$(".dots i").eq(prevNum).removeClass("active");
+	// 	$(".dots i").eq(slNum).addClass("active");
+	// 	// console.log(slNum + z + 1);
+	// }
+	// $(".larr i").click(function(){
+	// 	slNum -= 1;
+	// 	slideItems("+");
+	// });
+	// $(".rarr i").click(function(){
+	// 	slNum += 1;
+	// 	slideItems("-");
+	// });
 
 // ================================================================================== EoF
 

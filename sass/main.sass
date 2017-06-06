@@ -267,30 +267,36 @@ body textarea:required:valid
 				//     content: "-"
 				//     position: relative
 				//     left: -5px
+.vam
+	vertical-align: middle
 footer
 	background-color: $darkblue
 	color: $greenwhite
-	.table
-		height: 70px
-	// height: 70px
-	.footer-logo
-		// background-color: $greenwhite
+	.ftable
+		height: 70px		
+	.footer-logo		
 		height: 70px
 		width: 70px
 		display: inline-block
 		vertical-align: middle
-
-		img
-			display: block
+		position: relative
+		img			
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
 			border-right: 1px solid $blue
 			padding: 0 15px
 	span
-		padding-left: 15px
+		padding-left: 30px		
 		font-family: "OpenSansLight", sans-serif
 		text-transform: uppercase
-
 	.footer-social
 		font-size: em(26px)
+		line-height: 70px
+		text-align: right
 		i
 			margin-right: 10px
 		a
