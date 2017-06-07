@@ -63,12 +63,18 @@
 // });
 // ================================================================================== EoF SLIDER 
 
+
+
 $(function() {
 
 $(".toggle-mnu").click(function() {
 	$(this).toggleClass("on");
 	$(".main-mnu").slideToggle();
 	return false;
+});
+
+$('.carousel').carousel({
+  interval: 10000
 });
 
 //MINE SLIDER ====================================================================

@@ -341,14 +341,20 @@ body
 	.button
 		border-color: $yellow
 		color: $greenwhite
-		background-color: $yellow
-		right: 0
-		position: absolute
+		background-color: $yellow		
+		display: inline-block
+		float: right
+		transition: ease-in-out .1s
 		&:hover			
 			color: $blue
+			background-color: #F3DE69
+			border-color: #F3DE69
 			text-decoration: none
 #myCarousel
 	height: 100vh
+	.cwrapper
+		position: relative
+
 	.carousel-inner
 		height: 100%
 		>.item
@@ -361,7 +367,7 @@ body
 		max-height: 100%
 		width: 100%
 	.carousel-caption
-		bottom: 350px
+		bottom: 20%
 		text-align: left
 		p
 			text-shadow: none
