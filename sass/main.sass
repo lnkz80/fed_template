@@ -270,6 +270,35 @@ body textarea:required:valid
 
 .pages		
 .company
+	.item-priv-company
+		width: 100%
+		height: 200px
+		padding: 20px	
+		h3
+			color: $blue
+		p
+			color: $darkgreen		
+		img
+			border-bottom: 5px solid $yellow
+		.img-priv-company-l
+			float: left
+		.txt-priv-company-r
+			padding-left: 180px
+		.img-priv-company-r
+			float: right
+		.txt-priv-company-l
+			padding-right: 180px
+			h3, p
+				text-align: right
+	.item-priv-company:nth-child(even)
+		border-right: 5px solid $green
+		border-top: 5px solid $green
+	.item-priv-company:nth-child(odd)
+		border-left: 5px solid $green
+		border-top: 5px solid $green
+	.item-priv-company:nth-child(5)		
+		border-bottom: 5px solid $green
+		margin-bottom: 50px	
 .title
 	height: 500px	
 	width: 100%
