@@ -153,6 +153,15 @@ $("div.item-obj").hover(function() {
 	return false;
 });
 
+//LEADERSHIP DESCRIPTION HOVER EFFECT
+$("div.co-worker").hover(function() {
+	var ldescr = $(this).find(".lead-descr");
+	var leadimg = $(this).find("img");
+	ldescr.slideToggle(200);
+	// leadimg.css("filter", "grayscale(0%)")
+	return false;
+});
+
 // !!!!!!!!!!!!!!!!FOR TESTS!!!!!!!!!!!!!!!!
 // $(".logo").click(function(){
 // 	alert("dfnhjsgf");

@@ -298,7 +298,43 @@ body textarea:required:valid
 		border-top: 5px solid $green
 	.item-priv-company:nth-child(5)		
 		border-bottom: 5px solid $green
-		margin-bottom: 50px	
+		margin-bottom: 50px
+	.departments
+		margin-top: 25px
+		h4			
+			margin-bottom: 0
+			font-family: "OpenSansRegular", sans-serif
+			text-transform: uppercase
+			text-align: center
+			padding: 15px 0
+			display: block
+			width: 100%
+			background-color: $darkblue
+			color: $greenwhite
+			border-bottom: 5px solid $yellow
+		.item-dep
+			height: 150px
+			width: 100%
+			background-size: cover
+			background-position: center center
+			position: relative
+			border-bottom: 3px solid $yellow
+			filter: grayscale(70%)
+			transition: .3s
+			&:hover
+				filter: grayscale(0%)
+			.info-dep
+				position: absolute
+				bottom: 0
+				width: 100%
+				background-color: rgba(0, 0, 0, .5)				
+				span					
+					display: block					
+					padding: 10px 0
+					margin: 0
+					text-align: center
+					color: $greenwhite
+
 .title
 	height: 500px	
 	width: 100%
@@ -311,6 +347,24 @@ body textarea:required:valid
 		background-color: rgba(30, 30, 30, .70)
 		padding: 20px
 		border-left: 15px solid $yellow
+.leadership
+	img		
+		filter: grayscale(95%)
+		&:hover
+			filter: grayscale(0%)
+	span
+		display: none		
+		position: absolute
+		bottom: 0
+		left: 0
+		text-align: center
+		background-color: rgba(25, 52, 65, .75)
+		color: #fff
+		padding: 20px 5px
+		width: 100%		
+		a
+			color: $yellow			
+			text-transform: uppercase
 		
 .vam
 	vertical-align: middle
