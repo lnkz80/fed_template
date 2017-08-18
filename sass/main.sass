@@ -296,7 +296,7 @@ body textarea:required:valid
 	.item-priv-company:nth-child(odd)
 		border-left: 5px solid $green
 		border-top: 5px solid $green
-	.item-priv-company:nth-child(5)		
+	.item-priv-company:nth-last-child(1)
 		border-bottom: 5px solid $green
 		margin-bottom: 50px
 	.departments
@@ -348,8 +348,10 @@ body textarea:required:valid
 		padding: 20px
 		border-left: 15px solid $yellow
 .leadership
+	border-bottom: 5px solid $darkgreen
 	img		
 		filter: grayscale(95%)
+		transition: ease .3s
 		&:hover
 			filter: grayscale(0%)
 	span

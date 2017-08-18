@@ -157,7 +157,7 @@ $("div.item-obj").hover(function() {
 $("div.co-worker").hover(function() {
 	var ldescr = $(this).find(".lead-descr");
 	var leadimg = $(this).find("img");
-	ldescr.slideToggle(200);
+	ldescr.slideToggle(400);
 	// leadimg.css("filter", "grayscale(0%)")
 	return false;
 });
