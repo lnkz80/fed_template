@@ -402,18 +402,39 @@ body textarea:required:valid
 
 .contacts-block
 	padding: 0
+	// height: 320px
 .mainoffice
-	background-color: $darkblue
-	.head
-		background-color: $greenwhite
-		color: $darkblue
-		padding: 15px 20px
-		text-align: center
-		font-size: em(18pt)
-		i
-			margin-right: 10px
-			font-size: em(22pt)
-
+	background-color: $darkblue	
+	.headblock
+		position: relative
+		height: 320px
+		.head
+			position: absolute
+			top: 0
+			width: 100%
+			background-color: $greenwhite
+			color: $darkblue
+			padding: 15px 20px
+			text-align: center
+			font-size: em(18pt)
+			z-index: 12
+			i
+				margin-right: 10px
+				font-size: em(22pt)
+		.img
+			position: absolute
+			top: 100px
+			// margin: 35px 5px
+			border: 1px solid #907f35
+			z-index: 11
+		.back
+			position: absolute
+			top: 0
+			left: 3%			
+			width: 94%
+			height: 100%			
+			background-color: rgba(0,0,0,.15)			
+			z-index: 10
 .tradehouse
 	background-color: #907f35
 
