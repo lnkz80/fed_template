@@ -399,35 +399,47 @@ body textarea:required:valid
 // 		// -ms-filter: blur(5px)
 // 		filter: blur(5px)
 
-
+.tbl320
+	display: table
+	height: 320px
 .contacts-block
 	padding: 0
-	// height: 320px
-.mainoffice
-	background-color: $darkblue	
-	.headblock
-		position: relative
-		height: 320px
-		.head
-			position: absolute
-			top: 0
-			width: 100%
-			background-color: $greenwhite
-			color: $darkblue
-			padding: 15px 20px
-			text-align: center
-			font-size: em(18pt)
-			z-index: 12
-			i
-				margin-right: 10px
-				font-size: em(22pt)
-		.img
-			position: absolute
-			top: 100px
-			// margin: 35px 5px
-			border: 1px solid #907f35
-			z-index: 11
-		.back
+	color: $greenwhite
+	font-family: "OpenSansLight", sans-serif
+	font-size: em(20px)	
+	p
+		padding-left: 20%		
+		display: table-cell
+		vertical-align: middle
+		i	
+			margin-right: 15px
+			margin-bottom: 20px
+			font-size: em(20px)
+.gold i
+	color: $gold
+.darkblue i
+	color: $darkblue
+
+.headblock
+	position: relative
+	height: 320px
+	.head
+		position: absolute
+		top: 0
+		width: 100%
+		padding: 15px 20px
+		text-align: center
+		font-size: em(18pt)
+		z-index: 12
+		i
+			margin-right: 10px
+			font-size: em(22pt)
+	.img
+		position: absolute
+		top: 100px
+		// margin: 35px 5px			
+		z-index: 11
+	.back
 			position: absolute
 			top: 0
 			left: 3%			
@@ -435,50 +447,22 @@ body textarea:required:valid
 			height: 100%			
 			background-color: rgba(0,0,0,.15)			
 			z-index: 10
-.tradehouse
-	background-color: #907f35
+.mainoffice
+	background-color: $darkblue
+	.head
+		background-color: $greenwhite
+		color: $darkblue			
+	.img
+		border: 1px solid #907f35
 
-	// .contact-item-txt		
-	// 	padding: 0		
-	// 	h2
-	// 		display: block
-	// 		width: 100%
-	// 		background-color: $darkblue
-	// 		padding: 10px
-	// 		color: $greenwhite
-	// 		margin: 0
-	// 	div			
-	// 		margin: 0						
-	// 		height: 200px
-	// 		// background-color: $blue			
-	// 		background: url("img/pages/contacts/main_office.jpg")
-	// 		background-size: cover
-	// 		background-position: center center
-	// 		// filter: grayscale(70%)
-	// 		.blur-effect
-	// 		.overblur				
-	// 			opacity: .8
-	// 			height: 100%
-	// 			p			
-	// 				display: block
-	// 				position: absolute
-	// 				bottom: 0	
-	// 				background-color: #333
-	// 				width: 100%
-	// 				margin: 0px
-	// 				padding: 10px 30px
-	// 				// line-height: 36px
-	// 				font-family: "OpenSansLight", sans-serif								
-	// 				font-size: 16px
-	// 				color: $greenwhite				
-	// 				i				
-	// 					padding-right: 15px
-	// .contact-item-img
-	// 	// overflow: hidden		
-	// 	// background-color: #000
-	// 	margin: 0
-	// 	padding: 0
-			
+.tradehouse
+	background-color: $gold
+	.head		
+		background-color: $greenwhite
+		color: $gold						
+	.img			
+		border: 1px solid $darkblue
+	
 .vam
 	vertical-align: middle
 .row-flex
